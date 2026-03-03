@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Request a Bulk Quote | The Find Lab</title>
+  <meta name="description" content="Request a bulk quote for business laptops, monitors, desktops, or office setup solutions from The Find Lab in Brampton, Ontario." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+<header class="header">
+  <div class="container header__inner">
+    <a class="brand" href="index.html">
+      <img class="brand__logo"
+        src="https://drive.google.com/thumbnail?id=1CmFV9cOc0AAzajnMUu7-OPXaGlvd8cNS&sz=w600"
+        alt="The Find Lab logo">
+    </a>
+  </div>
+</header>
+
+<section class="quote-page">
+  <div class="container">
+    <div class="quote-wrapper">
+
+      <div class="quote-header">
+        <h1>Request a Bulk Quote</h1>
+        <p>
+          Tell us about your requirements and we’ll prepare a competitive proposal.
+          Serving Brampton & the Greater Toronto Area.
+        </p>
+      </div>
+
+      <!-- FORM START -->
+      <form class="quote-form"
+            action="https://formspree.io/f/xgoljypp"
+            method="POST">
+
+        <!-- Email subject -->
+        <input type="hidden" name="_subject" value="New Bulk Quote Request - The Find Lab">
+
+        <!-- Redirect after submission -->
+        <input type="hidden" name="_next" value="index.html">
+
+        <div class="form-row">
+          <label for="fullName">Full Name *</label>
+          <input type="text" id="fullName" name="Full Name" required>
+        </div>
+
+        <div class="form-row">
+          <label for="companyName">Company Name</label>
+          <input type="text" id="companyName" name="Company Name">
+        </div>
+
+        <div class="form-row">
+          <label for="email">Email Address *</label>
+          <input type="email" id="email" name="Email" required>
+        </div>
+
+        <div class="form-row">
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" name="Phone">
+        </div>
+
+        <div class="form-row">
+          <label for="productType">What do you need? *</label>
+          <select id="productType" name="Product Type" required>
+            <option value="">Select an option</option>
+            <option>Business Laptops</option>
+            <option>Ultrawide / Standard Monitors</option>
+            <option>Desktops / Workstations</option>
+            <option>Complete Office Setup</option>
+            <option>Mixed Bulk Order</option>
+          </select>
+        </div>
+
+        <div class="form-row">
+          <label for="quantity">Estimated Quantity</label>
+          <input type="number" id="quantity" name="Estimated Quantity" min="1">
+        </div>
+
+        <div class="form-row">
+          <label for="timeline">Required Timeline</label>
+          <select id="timeline" name="Timeline">
+            <option value="">Select timeframe</option>
+            <option>ASAP</option>
+            <option>Within 1 Week</option>
+            <option>Within 1 Month</option>
+            <option>Planning Phase</option>
+          </select>
+        </div>
+
+        <div class="form-row">
+          <label for="details">Additional Details</label>
+          <textarea id="details"
+                    name="Additional Details"
+                    rows="5"
+                    placeholder="Mention specifications, preferred models, budget range, delivery location, etc."></textarea>
+        </div>
+
+        <button type="submit" class="btn btn--primary btn--full">
+          Submit Quote Request
+        </button>
+
+      </form>
+      <!-- FORM END -->
+
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container footer__grid">
+
+    <div>
+      <h3 class="footer__title">The Find Lab</h3>
+      <p class="footer__text">
+        Brampton-based supplier of business-class refurbished laptops,
+        desktops, and monitors. Serving the GTA with pickup, delivery,
+        and optional office deployment.
+      </p>
+    </div>
+
+    <div>
+      <h4>Quick Links</h4>
+      <ul class="footer__list">
+        <li><a href="laptops.html">Laptops</a></li>
+        <li><a href="desktops.html">Desktops</a></li>
+        <li><a href="monitors.html">Monitors</a></li>
+        <li><a href="office-setup.html">Office Setup</a></li>
+        <li><a href="quote.html">Request Quote</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <h4>Business</h4>
+      <ul class="footer__list">
+        <li>Brampton, Ontario</li>
+        <li>Serving the GTA</li>
+        <li>Email: harmanjit108@gmail.com</li>
+      </ul>
+    </div>
+
+  </div>
+
+  <div class="container footer__bottom">
+    <p>© <span id="year"></span> The Find Lab. All rights reserved.</p>
+  </div>
+</footer>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>

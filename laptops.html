@@ -1,0 +1,301 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Laptops | The Find Lab</title>
+  <meta name="description" content="Shop business-class refurbished laptops in Brampton. Tested devices, competitive pricing, pickup/delivery across the GTA, and optional support." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <!-- Announcement Bar -->
+  <div class="topbar" role="region" aria-label="Site announcement">
+    <div class="container topbar__inner">
+      <p>
+        Weekly laptop drops + bulk deals for teams —
+        <a href="quote.html" class="topbar__link">Request a quote</a>
+      </p>
+      <p class="topbar__right">Brampton • GTA Delivery Available</p>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="header" role="banner">
+    <div class="container header__inner">
+      <a class="brand" href="index.html" aria-label="The Find Lab home">
+        <img class="brand__logo"
+          src="https://drive.google.com/thumbnail?id=1CmFV9cOc0AAzajnMUu7-OPXaGlvd8cNS&sz=w600"
+          alt="The Find Lab logo">
+        <span class="brand__fallback" aria-hidden="true">THE FIND LAB</span>
+      </a>
+
+      <nav class="nav" aria-label="Primary">
+        <button class="nav__toggle" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+
+        <ul class="nav__list" id="navList">
+          <li><a class="is-active" href="laptops.html">Laptops</a></li>
+          <li><a href="desktops.html">Desktops</a></li>
+          <li><a href="monitors.html">Monitors</a></li>
+          <li><a href="office-setup.html">Office Setup</a></li>
+          <li><a href="quote.html">Bulk Orders</a></li>
+          <li><a href="support.html">Support</a></li>
+	<li><a href="about.html">About</a></li>
+          <li><a class="nav__cta" href="index.html#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header__icons" aria-label="Quick actions">
+        <a class="iconbtn" href="#search" aria-label="Search">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M10 18a8 8 0 1 1 8-8 8 8 0 0 1-8 8Zm0-14a6 6 0 1 0 6 6 6 6 0 0 0-6-6Zm11 19a1 1 0 0 1-.71-.29l-4.2-4.2a1 1 0 0 1 1.42-1.42l4.2 4.2A1 1 0 0 1 21 23Z"/></svg>
+        </a>
+        <a class="iconbtn" href="quote.html" aria-label="Request a quote">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 7H4a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2Zm0 2-8 5-8-5h16Z"/></svg>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Page Hero -->
+    <section class="page-hero" aria-label="Laptops page hero">
+      <div class="container page-hero__inner">
+        <div>
+          <p class="pill">BUSINESS-CLASS • TESTED • READY</p>
+          <h1>Laptops for Work, School & Teams</h1>
+          <p class="page-hero__sub">
+            Shop curated refurbished laptops from The Find Lab in Brampton.
+            Every unit is tested, cleaned, and performance checked — with optional pickup/delivery across the GTA.
+          </p>
+          <div class="page-hero__actions">
+            <a class="btn btn--primary" href="#laptopGrid">Browse Inventory</a>
+            <a class="btn btn--ghost" href="quote.html">Bulk Quote</a>
+          </div>
+        </div>
+
+        <div class="page-hero__box">
+          <h3>What you get</h3>
+          <ul>
+            <li>Business-grade devices (built for daily use)</li>
+            <li>30-day coverage options</li>
+            <li>Competitive pricing for bulk orders</li>
+            <li>Local support available</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Filters (UI only) -->
+    <section class="filters" aria-label="Filters">
+      <div class="container filters__bar">
+        <div class="filters__group">
+          <label class="filters__label">Brand</label>
+          <select class="filters__select">
+            <option>All</option>
+            <option>Dell</option>
+            <option>HP</option>
+            <option>Lenovo</option>
+          </select>
+        </div>
+
+        <div class="filters__group">
+          <label class="filters__label">CPU</label>
+          <select class="filters__select">
+            <option>All</option>
+            <option>Intel i5</option>
+            <option>Intel i7</option>
+            <option>Intel i9</option>
+          </select>
+        </div>
+
+        <div class="filters__group">
+          <label class="filters__label">RAM</label>
+          <select class="filters__select">
+            <option>All</option>
+            <option>8 GB</option>
+            <option>16 GB</option>
+            <option>32 GB</option>
+          </select>
+        </div>
+
+        <div class="filters__group">
+          <label class="filters__label">Budget</label>
+          <select class="filters__select">
+            <option>All</option>
+            <option>Under $500</option>
+            <option>$500–$800</option>
+            <option>$800+</option>
+          </select>
+        </div>
+
+        <a class="filters__cta" href="quote.html">Need 5+ units? Get a quote →</a>
+      </div>
+    </section>
+
+    <!-- Laptop Grid -->
+    <section class="inventory" id="laptopGrid" aria-label="Laptop inventory">
+      <div class="container">
+        <div class="inventory__head">
+          <h2>Available Laptops</h2>
+          <p>Update these cards anytime to match your real stock.</p>
+        </div>
+
+        <div class="product-grid">
+          <!-- CARD 1 -->
+          <article class="product">
+            <div class="product__img">
+              <img src="https://i.dell.com/sites/csimages/Video_Imagery/all/latitude-5000-series-thumb.png" alt="Business laptop" loading="lazy">
+              <span class="product__badge">Top Value</span>
+            </div>
+            <div class="product__body">
+              <h3>Dell Latitude 5320</h3>
+              <p class="product__specs">i7 • 16GB RAM • 512GB NVMe • 13" FHD</p>
+              <p class="product__meta">Best for: remote work • school • travel</p>
+              <div class="product__footer">
+                <a class="btn btn--primary product__btn" href="index.html#contact">Check price</a>
+                <a class="btn btn--ghost product__btn" href="quote.html">Bulk quote</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- CARD 2 -->
+          <article class="product">
+            <div class="product__img">
+              <img src="https://scene7-cdn.dell.com/is/image//DellComputer/laptop-13-latitude-7320-html5-static-image-set?wid=768&fmt=png-alpha" alt="Laptop on desk" loading="lazy">
+              <span class="product__badge product__badge--alt">Premium</span>
+            </div>
+            <div class="product__body">
+              <h3>Dell Latitude 7320 (2-in-1)</h3>
+              <p class="product__specs">i7 • 16GB RAM • 512GB NVMe • Touch</p>
+              <p class="product__meta">Best for: executives • presentations • field work</p>
+              <div class="product__footer">
+                <a class="btn btn--primary product__btn" href="index.html#contact">Check price</a>
+                <a class="btn btn--ghost product__btn" href="quote.html">Bulk quote</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- CARD 3 -->
+          <article class="product">
+  <div class="product__img">
+    <img src="https://i.dell.com/is/image/DellContent//content/dam/ss2/product-images/dell-client-products/notebooks/xps-notebooks/xps-13-9310/general/xps-13_black_standard.jpg?fmt=pjpg&pscan=auto&scl=1&wid=3363&hei=2419&qlt=100,1&resMode=sharp2&size=3363,2419&chrss=full&imwidth=5000"
+         alt="Dell XPS 13 9310 i7 16GB 512GB 4K Touch"
+         loading="lazy">
+    <span class="product__badge product__badge--alt">Premium</span>
+  </div>
+
+  <div class="product__body">
+    <h3>Dell XPS 13 9310</h3>
+    <p class="product__specs">
+      Intel i7 • 16GB RAM • 512GB NVMe • 4K Touch Display
+    </p>
+    <p class="product__meta">
+      Best for: professionals • creators • executives • ultra-portable performance
+    </p>
+
+    <div class="product__footer">
+      <a class="btn btn--primary product__btn" href="index.html#contact">
+        Check Price
+      </a>
+      <a class="btn btn--ghost product__btn" href="quote.html">
+        Bulk Quote
+      </a>
+    </div>
+  </div>
+</article>
+        </div>
+
+        <div class="inventory__note">
+          <p><strong>Want a specific model?</strong> Message us with your preferred specs and budget — we can source consistent units for teams.</p>
+          <a class="btn btn--ghost" href="quote.html">Request a Bulk Quote</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- How it works -->
+    <section class="how" aria-label="How it works">
+      <div class="container how__grid">
+        <div class="how__item">
+          <h3>1) Share your requirements</h3>
+          <p>Tell us your specs, budget, and quantity.</p>
+        </div>
+        <div class="how__item">
+          <h3>2) We prepare options</h3>
+          <p>We propose tested devices that fit your needs.</p>
+        </div>
+        <div class="how__item">
+          <h3>3) Pickup or delivery</h3>
+          <p>Local pickup in Brampton or delivery across the GTA.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta" aria-label="Call to action">
+      <div class="container cta__box">
+        <div>
+          <h2>Outfitting an office?</h2>
+          <p>We can supply laptops + monitors and help prepare a clean workstation setup.</p>
+        </div>
+        <a class="btn btn--primary" href="quote.html">Request Bulk Quote</a>
+      </div>
+    </section>
+
+    <footer class="footer">
+  <div class="container footer__grid">
+
+    <div>
+      <h3 class="footer__title">The Find Lab</h3>
+      <p class="footer__text">
+        Brampton-based supplier of business-class refurbished laptops,
+        desktops, and monitors. Serving the GTA with pickup, delivery,
+        and optional office deployment.
+      </p>
+    </div>
+
+    <div>
+      <h4>Quick Links</h4>
+      <ul class="footer__list">
+        <li><a href="laptops.html">Laptops</a></li>
+        <li><a href="desktops.html">Desktops</a></li>
+        <li><a href="monitors.html">Monitors</a></li>
+        <li><a href="office-setup.html">Office Setup</a></li>
+        <li><a href="quote.html">Request Quote</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <h4>Business</h4>
+      <ul class="footer__list">
+        <li>Brampton, Ontario</li>
+        <li>Serving the GTA</li>
+        <li>Email: harmanjit108@gmail.com</li>
+      </ul>
+    </div>
+
+  </div>
+
+  <div class="container footer__bottom">
+    <p>© <span id="year"></span> The Find Lab. All rights reserved.</p>
+  </div>
+</footer>
+  </main>
+
+  <a class="chat-fab" href="index.html#contact" aria-label="Chat or contact The Find Lab">
+    <span class="chat-fab__dot" aria-hidden="true"></span>
+    Help
+  </a>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+    const toggle = document.querySelector(".nav__toggle");
+    const list = document.querySelector(".nav__list");
+    toggle.addEventListener("click", () => {
+      const open = list.classList.toggle("nav__list--open");
+      toggle.setAttribute("aria-expanded", String(open));
+    });
+  </script>
+</body>
+</html>
